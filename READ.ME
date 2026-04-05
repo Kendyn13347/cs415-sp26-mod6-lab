@@ -1,0 +1,61 @@
+# CS415 Module 6 Lab
+
+This repository contains side-by-side C++ and Rust implementations for core memory and data representation concepts.
+
+## Overview
+
+The programs demonstrate:
+
+- Primitive data types
+- Strings and memory behavior
+- Static and dynamic arrays/vectors
+- Records (`struct`)
+- Pointers/references in C++ and borrowing/ownership in Rust
+- Floating-point precision limits
+- Memory-safety differences between C++ and Rust
+
+## Project Structure
+
+- `main.cpp` - C++ implementation of the lab tasks and challenges
+- `main.rs` - Rust implementation of the lab tasks and challenges
+- `main` - compiled executable artifact (if present)
+
+## Build and Run
+
+### C++
+
+Compile:
+
+```bash
+g++ -std=c++17 -Wall -Wextra -pedantic -o main_cpp main.cpp
+```
+
+Run:
+
+```bash
+./main_cpp
+```
+
+### Rust
+
+Compile:
+
+```bash
+rustc main.rs -o main_rs
+```
+
+Run:
+
+```bash
+./main_rs
+```
+
+## Notes on Behavior
+
+- The C++ version includes examples of undefined behavior risk (for learning), such as out-of-bounds array access.
+- The Rust version uses safe ownership and borrowing rules that prevent many memory issues at compile time.
+- Both versions include a floating-point precision example showing why adding a very small value to a very large value may not change the result.
+
+## Learning Goal
+
+Compare how C++ and Rust model memory directly and how that affects correctness, safety, and developer experience.
